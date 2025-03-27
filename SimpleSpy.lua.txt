@@ -2153,7 +2153,7 @@ local newnamecall = newcclosure(function(remote, ...)
 end, original)
 
 local newFireServer = newcclosure(function(...)
-	return hookRemote("RemoteEvent", ...)
+	return hookRemote("BaseRemoteEvent", ...)
 end, originalEvent)
 
 local newInvokeServer = newcclosure(function(...)
